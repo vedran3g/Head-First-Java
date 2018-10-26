@@ -23,7 +23,6 @@ public class Puzzle4 {
 
 class Puzzle4b {
 	int ivar;
-
 	int doStuff(int factor) {
 		if (ivar > 100) {
 			return ivar * factor;
