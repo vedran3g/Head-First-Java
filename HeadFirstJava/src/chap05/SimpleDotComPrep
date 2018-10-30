@@ -1,0 +1,27 @@
+DECLARE int[], pozicija broda, ime locationCells
+DECLARE int, broj pokušaja, ime numOfHits, postavi na 0
+------------------------------------------------------------------------------------------------
+DECLARE checkYourself(), metoda, provjerava dal je pokušaj igraèa pogodak ili promašaj te to vraæa
+DECLARE setLocationCells(), setter, int[] je parametar, postavlja poziciju broda
+------------------------------------------------------------------------------------------------
+
+METHOD String checkYourself(String userGuess)
+	GET pokušaj pogodka kao string parametar
+	CONVERT pokušaj u int
+	REPEAT za svako polje koje je položaj broda
+		// COMPARE
+		IF pogodak
+			INCREMENT broj pogodaka
+			// FINDE OUT
+			IF broj pogodaka 3 RETURN 'kill'
+			ELSE ako nije kill RETURN 'hit'
+			END IF
+		ELSE nema pogodka RETURN 'miss'
+		END IF
+	END REPAT
+END METHOD
+
+METHOD void setLocationCells(int[] cellsLocation)
+	GET položaj broda kao parametar
+	ASSIGN pridruži parametar instance varijabli
+END METHOD
